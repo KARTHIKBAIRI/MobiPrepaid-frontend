@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-ENV REACT_APP_API_URL=https://mobile-recharge-backend.onrender.com
+ENV REACT_APP_API_URL=https://mobiprepaid-backend.onrender.com/api
 RUN npm run build
 
 # Stage 2: Serve with Nginx
